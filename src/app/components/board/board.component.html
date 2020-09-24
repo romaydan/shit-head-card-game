@@ -1,0 +1,6 @@
+<app-hand class="player-1 hidden-cards" [cards]="gameLogic.player1.hiddenCards"></app-hand>
+<app-hand class="player-1 top-cards "  [cards]="gameLogic.player1.TopCards"></app-hand>
+<app-hand [cards]="gameLogic.player1.HandsCards"></app-hand>
+<app-pack (drawCard)="drawCard($event)"></app-pack>
+
+

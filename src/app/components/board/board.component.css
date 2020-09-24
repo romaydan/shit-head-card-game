@@ -1,0 +1,22 @@
+.board{
+  display: grid;
+  grid-template-columns:250px auto 250px ;
+  grid-template-rows:70px 70px auto 70px auto 70px 70px;
+  position: relative;
+}
+.player-1 .hidden-cards{
+grid-template-areas: 0,2,3,2;
+position: absolute;
+
+}
+.player-1 .top-cards{
+position:absolute;
+grid-template-areas: 0,2,3,2;
+z-index: 9;
+margin: 10px 0px;
+}
+.pack{
+
+grid-template-areas: 3,1,4,1
+
+}

@@ -1,0 +1,9 @@
+<div class="card">
+  <div *ngIf="card.isHidden;else notHidden">
+    <img class="back" src="https://i.pinimg.com/originals/10/80/a4/1080a4bd1a33cec92019fab5efb3995d.png" />
+  </div>
+  <ng-template #notHidden>
+    <h1  class="type" [ngClass]="{red: card.suit==='Diamonds'||card.suit==='Hearts'}">{{card.type}}</h1>
+    <img class="suit" src={{card.suitImageUrl}} alt={{card.suit}} />
+  </ng-template>
+</div>
